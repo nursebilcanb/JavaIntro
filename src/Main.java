@@ -18,7 +18,8 @@ public class Main {
 		User user1 = new User(1,"Nursebil","Canbolat","nursebil@gmail.com","nur123");
 		
 		UserService userService = new UserManager(users,new EmailValidator(),new HibernateUserDao(users),new GoogleRegistirationManagerAdapter(),new HibernateVerificationDao());
-
+		//oldu mu
+		//hayýr ýý ecommerce demo gelecek anladým ben siz girince geldi sandým pardon
 		userService.register(user1);
 		System.out.println("----------------");
 		userService.login(user1);
